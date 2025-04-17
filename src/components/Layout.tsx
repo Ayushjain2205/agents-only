@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { WalletDefault } from "@coinbase/onchainkit/wallet";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -40,7 +39,6 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="rpgui-icon potion-blue"></div>
                 <span className="text-white">15</span>
               </div>
-              <WalletDefault />
             </div>
           </div>
 

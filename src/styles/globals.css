@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/press-start-2p");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P", sans-serif !important;
+}
+
+#__next {
+  height: 100vh;
+}
+
+.rpgui-content {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 22px !important;
+  margin-bottom: 0px !important;
+}
+
+@layer base {
+  :root .default-light,
+  .default-dark,
+  .base,
+  .cyberpunk,
+  .hacker {
+    /* Override specific variables as needed */
+    --ock-font-family: "Press Start 2P", sans-serif !important;
+    --ock-border-radius: "your-custom-value";
+    --ock-text-primary: "your-custom-value";
+  }
+  .custom-light {
+    --ock-font-family: "Press Start 2P", sans-serif !important;
+  }
+  .custom-dark {
+    --ock-font-family: "Press Start 2P", sans-serif !important;
+  }
+}
